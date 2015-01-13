@@ -1,0 +1,88 @@
+body {
+	font-family: "Roboto";
+	background-color: #FFC94F;
+}
+
+h1 {
+	
+	text-transform: uppercase;
+	font-size: 10vmin;
+	color: #282828;
+	text-align: left;
+	margin-left: auto;
+	margin-right: auto;
+	width:80%;
+	margin-bottom: 4vmin;
+}
+
+#snark {
+	
+	text-transform: lowercase;
+	font-size: 3vmin;
+	font-weight: 400;
+	font-style: italic;
+	padding-left:25vmin;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) and (min-width:400px) {
+    #snark {
+        white-space: nowrap;
+    }
+}
+
+figcaption {
+	
+	font-style: italic;
+	font-weight: 100;
+	text-align: center;
+}
+
+
+div.pics {
+
+	width: 50%;
+   	margin-left: auto;
+   	margin-right: auto;
+   	
+    display: -webkit-flex; /* Safari */
+    -webkit-flex-flow: row wrap; /* Safari 6.1+ */
+    -webkit-align-content: space-around; /* Safari 7.0+ */
+    display: flex;
+    flex-flow: row wrap;
+	justify-content: space-around;
+}
+
+img {
+	height: 20vmin;
+	width: 20vmin;
+}
+
+div.external {
+
+	text-transform: uppercase;
+	width: 50%;
+   	margin-left: auto;
+   	margin-right: auto;
+
+   	display: -webkit-flex; /* Safari */
+    -webkit-flex-flow: row wrap; /* Safari 6.1+ */
+    -webkit-align-content: space-around; /* Safari 7.0+ */
+    display: flex;
+    flex-flow: row wrap;
+	justify-content: space-around;
+}
+
+a:link {
+	color:#E20048;
+	text-decoration: none;
+
+}
+
+a:visited {
+	color:#93002F;
+	text-decoration: none;
+}
+
+a:hover {
+	color:#06859d;
+}
