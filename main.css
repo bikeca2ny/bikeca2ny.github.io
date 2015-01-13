@@ -8,11 +8,11 @@ h1 {
 	text-transform: uppercase;
 	font-size: 10vmin;
 	color: #282828;
-	text-align: left;
+	text-align: center;
 	margin-left: auto;
 	margin-right: auto;
-	width:80%;
-	margin-bottom: 4vmin;
+	width:100vmin;
+	margin-bottom: 10vmin;
 }
 
 #snark {
@@ -35,15 +35,16 @@ figcaption {
 	font-style: italic;
 	font-weight: 100;
 	text-align: center;
+	font-size: 2vmin;
 }
 
 
-div.pics {
+#pics {
 
-	width: 50%;
-   	margin-left: auto;
-   	margin-right: auto;
-   	
+	width: 80%;
+   	margin-left:auto;
+   	margin-right:auto;
+
     display: -webkit-flex; /* Safari */
     -webkit-flex-flow: row wrap; /* Safari 6.1+ */
     -webkit-align-content: space-around; /* Safari 7.0+ */
@@ -52,12 +53,17 @@ div.pics {
 	justify-content: space-around;
 }
 
+span.travel{
+	text-transform: uppercase;
+	text-align:center;
+}
+
 img {
 	height: 20vmin;
 	width: 20vmin;
 }
 
-div.external {
+#external {
 
 	text-transform: uppercase;
 	width: 50%;
@@ -71,6 +77,7 @@ div.external {
     flex-flow: row wrap;
 	justify-content: space-around;
 }
+
 
 a:link {
 	color:#E20048;
