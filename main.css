@@ -46,17 +46,50 @@ figcaption {
 	justify-content: space-around;
 }
 
-div.travel{
+table {
+	width: 80%;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+#about {
+	width: 60%;
+	text-align: center;
+	margin-top: 2em;
+}
+
+td.miles {
 	text-transform: uppercase;
-	text-align:center;
-	vertical-align: middle;
+	text-align: center;
+	padding-bottom:1em;
 }
 
 div img {
 
+	margin-bottom:0;
 	display: table-cell;
    	margin-left:auto;
    	margin-right:auto;
+}
+
+#why, #sub{
+
+	width: 50%;
+	margin-right: auto;
+	margin-left: auto;
+
+	font-weight:100;
+	text-align:center;
+	
+}
+
+#why{
+	padding-top: 1em;
+	
+}
+
+#sub{
+	font-style:italic;
 }
 
 img.headshot {
@@ -93,4 +126,12 @@ a:visited {
 
 a:hover {
 	color:#06859d;
+}
+
+#kick:before{
+	content:"Kickstarter";
+}
+
+#kick:hover:before{
+	content:"Coming Soon!";
 }
