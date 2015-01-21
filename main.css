@@ -109,6 +109,10 @@ img.headshot {
 	width: 20vmin;
 }
 
+#sol {
+	width:40vmin;
+	border:3px;
+}
 
 #external {
 
