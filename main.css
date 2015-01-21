@@ -64,10 +64,15 @@ table {
 	margin-top: 2em;
 }
 
-td.miles {
-	text-transform: uppercase;
+td {
+	
 	text-align: center;
+	
+}
+
+td.miles{
 	padding-bottom:1em;
+	text-transform: uppercase;
 }
 
 div img {
