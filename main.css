@@ -116,6 +116,13 @@ img.headshot {
 	width: 50%;
    	margin-left: auto;
    	margin-right: auto;
+
+   	display: -webkit-flex; /* Safari */
+    -webkit-flex-flow: row wrap; /* Safari 6.1+ */
+    -webkit-align-content: space-around; /* Safari 7.0+ */
+    display: flex;
+    flex-flow: row wrap;
+	justify-content: space-around;
 }
 
 
@@ -134,10 +141,6 @@ a:hover {
 	color:#06859d;
 }
 
-#kick:before{
-	content:"Kickstarter";
-}
-
-#kick:hover:before{
-	content:"Coming Soon!";
+#kick:hover:after{
+	content:" Coming Soon!";
 }
