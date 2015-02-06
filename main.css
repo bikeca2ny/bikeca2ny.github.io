@@ -1,19 +1,22 @@
 body {
 	font-family: "Roboto";
 	background-color: #FFC94F;
+    vertical-align: middle;
 }
+
+
 
 h1 {
 	
 	text-transform: uppercase;
-	font-size: 10vmin;
+	font-size: 12vmin;
 	color: #282828;
 	text-align: center;
 	margin-left: auto;
 	margin-right: auto;
 	margin-bottom: 0;
 	margin-top:0;
-	width:100vmin;
+	width:90vmin;
 	
 }
 
@@ -21,12 +24,12 @@ h1 {
     #snark {
         white-space: nowrap;
     }
-    #why {
+    .why {
     	width: 70%;
     }
 }
 
-figcaption {
+td figure figcaption {
 	
 	font-style: italic;
 	font-weight: 100;
@@ -54,14 +57,8 @@ table {
 	width: 80%;
 	margin-right: auto;
 	margin-left: auto;
-	margin-top:0em;
-	padding-top:0em;
-}
-
-#about {
-	width: 60%;
-	text-align: center;
-	margin-top: 2em;
+	margin-top:0;
+	padding-top:0;
 }
 
 td {
@@ -77,29 +74,41 @@ td.miles{
 
 div img {
 
+	padding-bottom:0;
 	margin-bottom:0;
 	display: table-cell;
    	margin-left:auto;
    	margin-right:auto;
 }
 
-#why, #sub{
+div #footer{
+	background-color: #333333;
+}
 
+figure #sol {
+	float:right;
+}
+.why, #sub, #about{
 	width: 50%;
 	margin-right: auto;
 	margin-left: auto;
-
 	font-weight:100;
+}
+
+.why, #sub {
 	text-align:center;
 	
 }
 
-#why{
+.why{
 	padding-top: 1em;
 }
 
-#sub{
-	font-style:italic;
+#about {
+
+	-webkit-column-count: 2;
+	-moz-column-count: 2;
+	column-count: 2;
 }
 
 #star {
@@ -107,16 +116,17 @@ div img {
 	font-weight:100;
 	font-style:italic;
 	font-size:10px;
+
+}
+
+#sub{
+	font-style:italic;
+	width: 60vw;
 }
 
 img.headshot {
 	height: 20vmin;
 	width: 20vmin;
-}
-
-#sol {
-	width:40vmin;
-	border:3px;
 }
 
 #external {
@@ -126,14 +136,28 @@ img.headshot {
    	margin-left: auto;
    	margin-right: auto;
 
-   	display: -webkit-flex; /* Safari */
-    -webkit-flex-flow: row wrap; /* Safari 6.1+ */
-    -webkit-align-content: space-around; /* Safari 7.0+ */
-    display: flex;
-    flex-flow: row wrap;
-	justify-content: space-around;
+}
+#external ul {
+	margin:0;
+	padding:0;
+	list-style-type: none;
+	text-align: center;
 }
 
+#external ul li {
+	display: inline-block;
+	*display: inline;
+}
+
+#external ul li #kick{
+	padding-left: 10vw;
+	padding-right: 10vw;
+}
+
+#external ul li #kick:hover{
+	padding-left: 6vw;
+	padding-right: 6vw;
+}
 
 a:link {
 	color:#E20048;
@@ -152,4 +176,23 @@ a:hover {
 
 #kick:hover:after{
 	content:" Coming Soon!";
+}
+
+#home {
+	float:left;
+	padding: 5vw;
+	position: fixed;
+
+}
+
+#bikeheads, #bikeheads_hover {
+	width: 60vmin;
+}
+
+#bikeheads_hover {
+	display:none;
+}
+
+#bikeheads:hover + #bikeheads_hover{
+	display:block;
 }
