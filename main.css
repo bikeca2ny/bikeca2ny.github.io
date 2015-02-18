@@ -24,12 +24,12 @@ h1 {font-size: 12vmin; width:50vmin; line-height:12vmin;}
 
 h2 {font-size: 8vmin;}
 
-h1, h2, table, div img, .why, #sub, #about, .external, #pics{
+h1, h2, table, div img, .why, #sub, #about, .social, .external, #pics{
 	margin-right: auto;
 	margin-left: auto;
 }
 
-.why, #sub, #about, .external{
+.why, #sub, #about, .external, .social{
 	width: 50%;
 }
 
@@ -41,6 +41,11 @@ h1, .external, td.miles {
 	text-transform: uppercase;
 }
 
+.social{
+	text-align:center;
+	font-weight: 100;
+	font-style:italic;
+}
 @media screen and (-webkit-min-device-pixel-ratio:0) and (min-width:400px) {
     #snark {
         white-space: nowrap;
