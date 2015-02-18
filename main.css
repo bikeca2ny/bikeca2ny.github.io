@@ -1,23 +1,44 @@
+html, body {
+	height:100%;
+	width: 100%;
+	margin:0;
+	padding:0;
+}
+
 body {
 	font-family: "Roboto";
 	background-color: #FFC94F;
     vertical-align: middle;
 }
 
+h1, h2 {
 
-
-h1 {
-	
-	text-transform: uppercase;
-	font-size: 12vmin;
 	color: #282828;
 	text-align: center;
-	margin-left: auto;
-	margin-right: auto;
 	margin-bottom: 0;
 	margin-top:0;
 	width:90vmin;
-	
+}
+
+h1 {font-size: 12vmin; width:50vmin; line-height:12vmin;}
+
+h2 {font-size: 8vmin;}
+
+h1, h2, table, div img, .why, #sub, #about, .external, #pics{
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.why, #sub, #about, .external{
+	width: 50%;
+}
+
+.why, #sub, #about{
+	font-weight:100;
+}
+
+h1, .external, td.miles {
+	text-transform: uppercase;
 }
 
 @media screen and (-webkit-min-device-pixel-ratio:0) and (min-width:400px) {
@@ -30,7 +51,7 @@ h1 {
 }
 
 td figure figcaption {
-	
+
 	font-style: italic;
 	font-weight: 100;
 	text-align: center;
@@ -42,8 +63,6 @@ td figure figcaption {
 
 	width: 80%;
 	display: table-cell;
-   	margin-left:auto;
-   	margin-right:auto;
    	
     display: -webkit-flex; /* Safari */
     -webkit-flex-flow: row wrap; /* Safari 6.1+ */
@@ -55,8 +74,6 @@ td figure figcaption {
 
 table {
 	width: 80%;
-	margin-right: auto;
-	margin-left: auto;
 	margin-top:0;
 	padding-top:0;
 }
@@ -69,7 +86,6 @@ td {
 
 td.miles{
 	padding-bottom:1em;
-	text-transform: uppercase;
 }
 
 div img {
@@ -77,23 +93,23 @@ div img {
 	padding-bottom:0;
 	margin-bottom:0;
 	display: table-cell;
-   	margin-left:auto;
-   	margin-right:auto;
 }
 
 div #footer{
+
+	text-align:right;
+	color: #808080;
+	font-weight: 100;
 	background-color: #333333;
+	margin-top:1em;
+	padding-right:2em;
+	opacity:.4;
 }
 
 figure #sol {
 	float:right;
 }
-.why, #sub, #about{
-	width: 50%;
-	margin-right: auto;
-	margin-left: auto;
-	font-weight:100;
-}
+
 
 .why, #sub {
 	text-align:center;
@@ -129,32 +145,25 @@ img.headshot {
 	width: 20vmin;
 }
 
-#external {
 
-	text-transform: uppercase;
-	width: 50%;
-   	margin-left: auto;
-   	margin-right: auto;
-
-}
-#external ul {
+.external ul {
 	margin:0;
 	padding:0;
 	list-style-type: none;
 	text-align: center;
 }
 
-#external ul li {
+.external ul li {
 	display: inline-block;
 	*display: inline;
 }
 
-#external ul li #kick{
+.external ul li #kick{
 	padding-left: 10vw;
 	padding-right: 10vw;
 }
 
-#external ul li #kick:hover{
+.external ul li #kick:hover{
 	padding-left: 6vw;
 	padding-right: 6vw;
 }
