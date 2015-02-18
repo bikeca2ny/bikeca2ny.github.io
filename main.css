@@ -188,10 +188,6 @@ a:hover {
 	color:#06859d;
 }
 
-#kick:hover:after{
-	content:" Coming Soon!";
-}
-
 #home {
 	float:left;
 	padding: 5vw;
