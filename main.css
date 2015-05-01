@@ -159,7 +159,7 @@ img.headshot {
 }
 
 .external ul li {
-	display: inline-block;
+	display: inline;
 	*display: inline;
 }
 
